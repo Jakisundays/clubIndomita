@@ -1,16 +1,15 @@
 {
   "files": {
     "main.css": "/clubIndomita/static/css/main.a6637b5d.css",
-    "main.js": "/clubIndomita/static/js/main.e89bf814.js",
+    "main.js": "/clubIndomita/static/js/main.90510656.js",
     "static/media/bg01.gif": "/clubIndomita/static/media/bg01.c2523b6a3457c3baf551.gif",
-    "static/media/img3.gif": "/clubIndomita/static/media/img3.3cf032068c8f97343ace.gif",
     "static/media/pass3.gif": "/clubIndomita/static/media/pass3.e04fac9a9d7842e352af.gif",
     "index.html": "/clubIndomita/index.html",
     "main.a6637b5d.css.map": "/clubIndomita/static/css/main.a6637b5d.css.map",
-    "main.e89bf814.js.map": "/clubIndomita/static/js/main.e89bf814.js.map"
+    "main.90510656.js.map": "/clubIndomita/static/js/main.90510656.js.map"
   },
   "entrypoints": [
     "static/css/main.a6637b5d.css",
-    "static/js/main.e89bf814.js"
+    "static/js/main.90510656.js"
   ]
 }
