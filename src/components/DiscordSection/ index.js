@@ -1,7 +1,7 @@
 import React from 'react'
 import { DiscordContainer, DiscH1, DiscLink, DiscWrapper } from './DiscordElements'
 import {FaDiscord} from 'react-icons/fa'
-const DiscordSection = ({DiscTitle, DiscordLink, img, alt}) => {
+const DiscordSection = ({DiscTitle, DiscordLink}) => {
   return (
     <DiscordContainer>
        <DiscWrapper>
