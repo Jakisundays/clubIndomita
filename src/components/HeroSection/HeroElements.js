@@ -32,13 +32,7 @@ export const HeroBg = styled.div`
     overflow: hidden;
 `;
 
-export const VideoBg = styled.video`
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    background: #232a34;
-`;
+
 
 export const HeroContent = styled.div`
     z-index: 3;
@@ -48,19 +42,35 @@ export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    height: 550px;
 `
 
 export const HeroH1 = styled.h1`
     color: #fff;
     font-size: 48px;
     text-align: center;
-
+    text-shadow: 2px 2px #000;
     @media screen and (max-width: 760px){
         font-size: 40px;
     }
     @media screen and (max-width: 480px){
         font-size: 32px;
     }
+`
+export const HeroH2 = styled.p`
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px #000;
+
+    @media screen and (max-width: 760px){
+        font-size: 36px;
+    }
+    @media screen and (max-width: 480px){
+        font-size: 24px;
+    }
+    
 `
 
 export const HeroP = styled.p`
@@ -69,7 +79,7 @@ export const HeroP = styled.p`
     font-size: 24px;
     text-align: center;
     max-width: 600px;
-
+    text-shadow: 3px 2px #000;
     @media screen and (max-width: 760px){
         font-size: 24px;
     }

@@ -1,16 +1,15 @@
 import React from 'react';
-import Video from '/Users/jacobdominguez/Documents/club-indomita/src/components/videos/video.mp4'
-import {HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP} from './HeroElements'
+import {HeroContainer, HeroContent, HeroH1, HeroH2, HeroP} from './HeroElements'
+import LoginBg from '/Users/jacobdominguez/Documents/club-indomita/src/components/images/bg01.gif'
 
 const HeroSection = () => {
   return (
-    <HeroContainer>
-        <HeroBg>
-            <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
-        </HeroBg>
+    <HeroContainer style={{ backgroundImage: `url(${LoginBg}) `}}>
+       
         <HeroContent>
           <HeroH1>Te estabamos esperando.</HeroH1>
-          <HeroP>Indomita Secret Society</HeroP>
+          <HeroH2>Bienvenido a: </HeroH2>
+          <HeroP>Indómita Secret Society</HeroP>
         </HeroContent>
     </HeroContainer>
   )

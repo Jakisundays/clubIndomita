@@ -37,13 +37,6 @@ export const DiscH1 = styled.h1`
 `;
 
 export const DiscLink = styled.a`
-    max-width: 555px;
-    height: 100%
-`;
-
-export const DiscImg = styled.img`
-    width: 100%;
-    height: 200px;
-    margin: 0 0 10px 0;
-    padding-right: 0;
-`
+    font-size: 11em;
+    color: #7289da;
+    `;

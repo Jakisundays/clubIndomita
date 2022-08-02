@@ -1,13 +1,12 @@
 import React from 'react'
-import { ReglasContainer, ReglasWrapper, ReglasRow, Column1, TextWrapper, TopLine, Heading, Column2, ImgWrap, Img, Subtitulo } from './ReglasElements'
+import { ReglasContainer, ReglasWrapper, ReglasRow, TextWrapper, TopLine, Heading, Subtitulo } from './ReglasElements'
 
-const ReglasSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, regla1, regla2, regla3, img, alt}) => {
+const ReglasSection = ({lightBg, id, topLine, lightText, headLine, darkText, regla1, regla2, regla3}) => {
   return (
     <>
     <ReglasContainer lightBg={lightBg} id={id}>
         <ReglasWrapper>
-            <ReglasRow imgStart={imgStart}>
-                <Column1>
+            <ReglasRow>
                 <TextWrapper>
                     <TopLine>{topLine}</TopLine>
                     <Heading lightText={lightText}>{headLine}</Heading>
@@ -15,12 +14,6 @@ const ReglasSection = ({lightBg, id, imgStart, topLine, lightText, headLine, dar
                     <Subtitulo darkText={darkText}>{regla2}</Subtitulo>
                     <Subtitulo darkText={darkText}>{regla3}</Subtitulo>
                 </TextWrapper>
-                </Column1>
-                <Column2>
-                  <ImgWrap> 
-                    <Img src={img} alt={alt}/>
-                  </ImgWrap>
-                </Column2>
             </ReglasRow>
         </ReglasWrapper>
     </ReglasContainer>

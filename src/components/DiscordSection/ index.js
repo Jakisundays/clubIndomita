@@ -1,13 +1,13 @@
 import React from 'react'
-import { DiscordContainer, DiscH1, DiscImg, DiscLink, DiscWrapper } from './DiscordElements'
-
+import { DiscordContainer, DiscH1, DiscLink, DiscWrapper } from './DiscordElements'
+import {FaDiscord} from 'react-icons/fa'
 const DiscordSection = ({DiscTitle, DiscordLink, img, alt}) => {
   return (
     <DiscordContainer>
        <DiscWrapper>
         <DiscH1>{DiscTitle}</DiscH1>
         <DiscLink href={DiscordLink}>
-            <DiscImg src={img} alt={alt} />
+            <FaDiscord />
         </DiscLink>
       </DiscWrapper>
     </DiscordContainer>

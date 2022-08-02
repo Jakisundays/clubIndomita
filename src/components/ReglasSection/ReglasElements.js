@@ -14,18 +14,24 @@ export const ReglasContainer = styled.div`
 export const ReglasWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 760px;
+    height: 620px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
+
+    @media screen and (max-width: 680px){
+        height: 300px;
+    }
+
 `
+//height con foto 740px;
 
 export const ReglasRow = styled.div`
     display: grid;
-    grid-auto-columns: minmax(auto, 1fr);
+    grid-columns: 1;
     align-items: center;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
@@ -34,17 +40,17 @@ export const ReglasRow = styled.div`
     }
 `;
 
-export const Column1 = styled.div`
-    margin-bottom: 15px;
-    padding: 0 15px;
-    grid-area: col1;
-`;
+// export const Column1 = styled.div`
+//     margin-bottom: 15px;
+//     padding: 0 15px;
+//     grid-area: col1;
+// `;
 
-export const Column2 = styled.div`
-    margin-bottom: 5px;
-    padding: 0 15px;
-    grid-area: col2;
-`;
+// export const Column2 = styled.div`
+//     margin-bottom: 5px;
+//     padding: 0 15px;
+//     grid-area: col2;
+// `;
 
 export const TextWrapper = styled.div`
     max-width: 540px;
@@ -59,6 +65,23 @@ export const TopLine = styled.div`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
+
+    animation: 8s anim-flipX ease infinite;
+    }
+    @keyframes anim-flipX {
+    0% {
+        opacity: 0.9;
+        transform: rotateX(90def);
+    }
+    50% {
+        opacity: 1;
+        transform: rotateX(720deg);
+    }
+    100% {
+        /* animate nothing to pause animation at the end */
+        opacity: 1;
+        transform: rotateX(720deg);
+    }
 `
 
 export const Heading = styled.h1`
