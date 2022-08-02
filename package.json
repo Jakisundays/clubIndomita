@@ -1,4 +1,5 @@
-{ "name": "club-indomita",
+{ "homepage": "http://Jakisundays.github.io/club-indomita",
+  "name": "club-indomita",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
